@@ -7,33 +7,47 @@ Features
 Account creation
 
 1.You can create accounts for user as well as theatre owner.
+
 2.If the user is a customer, the account will autometically be approved on verification.
+
 3.In case of theatre owner, an admin will have to approve the account.
+
 4.JSON Web Token used for authentication.
+
 5.Users can also update some details like name, password and email.
+
 6.Admin can update additional details like userType and userStatus.
+
 7.User search is also available for users with proper authorization.
 
 Movie API
 
 1.An admin can create a new movie, Edit an existing movie and delete an existing movie.
+
 2.All registered users can get a list of all movies as well as a single movie using movieId.
 
 Theatre API
 
 1.A theatre owner or an admin can create a new theatre, Edit their existing theatre and delete their existing theatre.
+
 2.All registered users can get a list of all theatres as well as a single theatre using theatreId.
+
 3.All registered users can get a list of all the movies released in a single theatre using theatreId.
+
 4.A theatre owner or an admin can add or remove a new movie in an existing theatre.
 
 Booking API
 
 1.All registered users can create a new booking and update their existing booking.
+
 2.All registered users can get a list of all of their bookings as well as a single booking using bookingId.
+
 3.An admin can get the list of all the bookings.
 
 Payment API
 
 1.All registered users with a booking can create a payment for their booking.
+
 2.All registered users can get a list of all of their payments as well as a single payment using paymentId.
+
 3.An admin can get the list of all the payments.
