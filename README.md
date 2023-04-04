@@ -55,13 +55,23 @@ Payment API
 
 
 Dependencies
+
 npm modules
+
 express
+
 mongoose
+
 jsonwebtoken
+
 node-rest-client
+
 dotenv
+
 body-parser
+
 bcryptjs
+
 external applications
+
 notification service application
