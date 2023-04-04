@@ -79,7 +79,7 @@ notification service application
 
 REST API paths
 
-USER CREATION 
+----USER CREATION -----
 
 @SIGNUP
 
@@ -88,3 +88,17 @@ USER CREATION
 @Get all users
 
 @Get user by UserId
+
+@Update user data
+
+------MOVIE CREATION ----
+
+@CREATE
+
+@UPDATE
+
+@DELETE
+
+@GET ALL MOVIES
+
+@GET MOVIE BY MOVIEID
