@@ -32,6 +32,7 @@ Theatre API
 
 2.All registered users can get a list of all theatres as well as a single theatre using theatreId.
 
+
 3.All registered users can get a list of all the movies released in a single theatre using theatreId.
 
 4.A theatre owner or an admin can add or remove a new movie in an existing theatre.
@@ -51,3 +52,16 @@ Payment API
 2.All registered users can get a list of all of their payments as well as a single payment using paymentId.
 
 3.An admin can get the list of all the payments.
+
+
+Dependencies
+npm modules
+express
+mongoose
+jsonwebtoken
+node-rest-client
+dotenv
+body-parser
+bcryptjs
+external applications
+notification service application
