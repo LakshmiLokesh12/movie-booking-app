@@ -54,7 +54,7 @@ Payment API
 3.An admin can get the list of all the payments.
 
 
-Dependencies
+DEPENDENCIES
 
 npm modules
 
