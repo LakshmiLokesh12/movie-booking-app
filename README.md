@@ -75,3 +75,16 @@ bcryptjs
 external applications
 
 notification service application
+
+
+REST API paths
+
+USER CREATION 
+
+@SIGNUP
+
+@SIGNIN
+
+@Get all users
+
+@Get user by UserId
