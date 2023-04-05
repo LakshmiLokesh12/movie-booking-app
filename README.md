@@ -2,7 +2,7 @@
 This project is node.js back-end code for a movie booking application that can create various entities like users, movies, theatres, bookings and payments as well as perform various actions on them.
 
 
-*******Features**********
+*******  Features  **********
 
 -----Account creation--------
 
@@ -53,7 +53,7 @@ This project is node.js back-end code for a movie booking application that can c
 3.An admin can get the list of all the payments.
 
 
-***********DEPENDENCIES********
+***********  DEPENDENCIES  ********
 
 * npm modules
 
@@ -61,22 +61,22 @@ This project is node.js back-end code for a movie booking application that can c
 
 * mongoose
 
-jsonwebtoken
+* jsonwebtoken
 
-node-rest-client
+* node-rest-client
 
-dotenv
+* dotenv
 
-body-parser
+* body-parser
 
-bcryptjs
+* bcryptjs
 
-external applications
+* external applications
 
-notification service application
+* notification service application
 
 
-REST API paths
+**************  REST API paths  *********
 
 ----USER CREATION -----
 
