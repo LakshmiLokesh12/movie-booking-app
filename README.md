@@ -2,9 +2,9 @@
 This project is node.js back-end code for a movie booking application that can create various entities like users, movies, theatres, bookings and payments as well as perform various actions on them.
 
 
-Features
+*******Features**********
 
-Account creation
+-----Account creation--------
 
 1.You can create accounts for user as well as theatre owner.
 
@@ -20,24 +20,23 @@ Account creation
 
 7.User search is also available for users with proper authorization.
 
-Movie API
+---------Movie API-----------
 
 1.An admin can create a new movie, Edit an existing movie and delete an existing movie.
 
 2.All registered users can get a list of all movies as well as a single movie using movieId.
 
-Theatre API
+---------Theatre API----------
 
 1.A theatre owner or an admin can create a new theatre, Edit their existing theatre and delete their existing theatre.
 
 2.All registered users can get a list of all theatres as well as a single theatre using theatreId.
 
-
 3.All registered users can get a list of all the movies released in a single theatre using theatreId.
 
 4.A theatre owner or an admin can add or remove a new movie in an existing theatre.
 
-Booking API
+----------Booking API---------
 
 1.All registered users can create a new booking and update their existing booking.
 
@@ -45,7 +44,7 @@ Booking API
 
 3.An admin can get the list of all the bookings.
 
-Payment API
+----------Payment API---------
 
 1.All registered users with a booking can create a payment for their booking.
 
@@ -54,13 +53,13 @@ Payment API
 3.An admin can get the list of all the payments.
 
 
-DEPENDENCIES
+***********DEPENDENCIES********
 
-npm modules
+* npm modules
 
-express
+* express
 
-mongoose
+* mongoose
 
 jsonwebtoken
 
