@@ -135,4 +135,4 @@ This project is node.js back-end code for a Movie Booking Application that can c
 
 @GET BY PAYMENTID
 
-@GET ALL PAYMENTS
+@GET ALL PAYMENTS.
