@@ -78,7 +78,7 @@ This project is node.js back-end code for a movie booking application that can c
 
 **************  REST API paths  *********
 
-----USER CREATION -----
+----USER OPERATIONS -----
 
 @SIGNUP
 
@@ -90,7 +90,7 @@ This project is node.js back-end code for a movie booking application that can c
 
 @Update user data
 
-------MOVIE OPERATION ----
+------MOVIE OPERATIONS ----
 
 @CREATE
 
