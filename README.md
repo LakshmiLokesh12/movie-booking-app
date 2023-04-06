@@ -1,5 +1,5 @@
 # MOVIE-BOOKING-APPLICATION
-This project is node.js back-end code for a Movie Booking Application that can create various entities like users, movies, theatres, bookings and payments as well as perform various actions on them.
+This project is node.js back-end code for a Movie Booking Application that can create various entities like USERS, MOVIES, THEATERS,BOOKINGS and PAYMENTS as well as perform various actions on them.
 
 
 *******  Features  **********
@@ -8,7 +8,7 @@ This project is node.js back-end code for a Movie Booking Application that can c
 
 1.You can create accounts for user as well as theatre owner.
 
-2.If the user is a customer, the account will autometically be approved on verification.
+2.If the user is a customer, the account will automatically be approved on verification.
 
 3.In case of theatre owner, an admin will have to approve the account.
 
