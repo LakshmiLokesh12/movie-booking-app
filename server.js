@@ -14,6 +14,7 @@ const bodyParser = require("body-parser");
 const mongoose = require('mongoose');
 const dbConfig = require('./configs/db.config');
 const Movie = require('./models/movie.model');
+const Theatre = require('./models/theatre.model');
 
 
 //Initializing express
