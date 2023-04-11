@@ -163,6 +163,7 @@ async function init() {
  * Importing the routes
  */
 require('./routes/movie.routes')(app);
+require('./routes/theatre.routes')(app);
 
 app.listen(serverConfig.PORT, () => {
     console.log(`Application started on the port num : ${serverConfig.PORT}`);
