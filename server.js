@@ -33,7 +33,8 @@ mongoose.connect(dbConfig.DB_URL, () => {
 async function init() {
     await Movie.collection.drop();
     try {
-        await Movie.create({
+        
+        movie1 = await Movie.create({
             name: "Bachhan Pandey",
             description: "Comedy Masala Movie",
             casts: ["Akshay Kumar", "Jacqueline Fernandiz"],
@@ -44,7 +45,7 @@ async function init() {
             releaseDate: "18-03-2022",
             releaseSatus: "RELEASED"
         });
-        await Movie.create({
+       movie2 = await Movie.create({
             name: "Jalsa",
             description: "Intense Drama Movie",
             casts: ["Vidya Balan", "Shefali Shah"],
@@ -55,7 +56,7 @@ async function init() {
             releaseDate: "18-03-2022",
             releaseSatus: "RELEASED"
         });
-        await Movie.create({
+        movie3 = await Movie.create({
             name: "Jhund",
             description: "Comedy Drama Movie",
             casts: ["Amitabh Bachchan", "Abhinay Raj"],
@@ -66,7 +67,7 @@ async function init() {
             releaseDate: "04-03-2022",
             releaseSatus: "RELEASED"
         });
-        await Movie.create({
+       movie4 = await Movie.create({
             name: "Radhe Shyam",
             description: "Comedy Drama Movie",
             casts: ["Prabhas", "Pooja Hegde"],
@@ -77,7 +78,7 @@ async function init() {
             releaseDate: "11-03-2022",
             releaseSatus: "RELEASED"
         });
-        await Movie.create({
+       movie5 = await Movie.create({
             name: "The Kashmir Files",
             description: "Intense Movie",
             casts: ["Mithun Chakraborty", "Anupam Kher"],
