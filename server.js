@@ -25,7 +25,7 @@ mongoose.connect(dbConfig.DB_URL, () => {
     console.log("Error :", err.mssage)
 }
 );
-
+//updating array of movies
 
 /**
  * This function will initialize the initial state of the movie booking application
