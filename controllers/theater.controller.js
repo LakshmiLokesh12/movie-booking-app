@@ -1,5 +1,5 @@
 const Theatre = require("../models/theatre.model");
-
+const Movie = require("../models/movie.model");
 
 /**
  * Create  a new Theatre
@@ -85,4 +85,52 @@ exports.deleteTheatre = async (req, res)=>{
     });
 
 
+}
+/**
+ * Add a movie inside a theatre
+ */
+exports.addMoviesToATheater = async (req, res) => {
+
+    //validation of tha savedTheatre will be done in the later section as middleware
+    const savedTheatre = await Theatre.findOne({ _id: req.params.id });
+
+    //Validation of these movie ids will be done in the later section
+    movieIds = req.body.movieIds;
+
+    //Add movieIds to the theatres
+    if (req.body.insert) {
+        movieIds.forEach(movieId => {
+            savedTheatre.movies.push(movieId);
+        });
+    } else {
+        //remove these movies from the theatres
+        savedMovieIds = savedTheatre.movies;
+
+        movieIds.forEach(movieId => {
+            savedMovieIds = savedMovieIds.filter(smi => smi != movieId);
+        });
+        savedTheatre.movies = savedMovieIds;
+    }
+
+
+    await savedTheatre.save(); //save in the database
+    res.status(200).send(savedTheatre);
+
+}
+
+/**
+ * Check if the given movie is running in the given theatre
+ */
+exports.checkMovieInsideATheatre = async (req, res) => {
+
+
+    const savedTheatre = await Theatre.findOne({ _id: req.params.theatreId });
+
+    const savedMovie = await Movie.findOne({ _id: req.params.movieId });
+
+
+    const responseBody = {
+        message: savedTheatre.movies.includes(savedMovie._id) ? "Movie is present" : "Movie is not present"
+    }
+    res.status(200).send(responseBody);
 }
