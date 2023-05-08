@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const dbConfig = require('./configs/db.config');
 const Movie = require('./models/movie.model');
 const Theatre = require('./models/theatre.model');
+const User = require('./models/user.model');
+const bcrypt = require("bcryptjs");
 
 
 //Initializing express
@@ -139,7 +141,22 @@ async function init() {
         });
 
         console.log("Theatres created");
-        
+        /**
+     * Creating one ADMIN user at the server boot time
+     */
+     await User.collection.drop();
+     try {
+
+        user = await User.create({
+            name: "Vishwa",
+            userId: "admin", // It should be atleat 16, else will throw error
+            email: "Kankvish@gmail.com",  // If we don't pass this, it will throw the error
+            userType: "ADMIN",
+            password :bcrypt.hashSync("Welcome1", 8) //this field should be hidden from the end user
+
+        });
+        console.log("ADMIN user created");
+
         
 
     } catch (e) {
@@ -155,6 +172,8 @@ async function init() {
  */
 require('./routes/movie.routes')(app);
 require('./routes/theatre.routes')(app);
+require('./routes/auth.routes')(app);
+require('./routes/user.routes')(app);
 
 app.listen(serverConfig.PORT, () => {
     console.log(`Application started on the port num : ${serverConfig.PORT}`);
